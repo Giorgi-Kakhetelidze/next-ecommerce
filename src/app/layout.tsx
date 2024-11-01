@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lama Dev E-Commerce Application",
+  title: "NEMO",
   description: "A complete e-commerce application with Next.js and Wix",
 };
 
@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body className={inter.className}>
         <Navbar/>
         {children}
