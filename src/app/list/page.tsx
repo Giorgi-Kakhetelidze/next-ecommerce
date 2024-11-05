@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import Filter from "../../components/Filter";
+import ProductList from '@/components/ProductList';
 
 function ListPage() {
   return (
@@ -22,6 +23,11 @@ function ListPage() {
       </div>
       {/* FILTER  */}
       <Filter/>
+
+      {/* PRODUCTS*/}
+      <h1 className='mt-12 text-xl font-semibold'>Shoes For You!</h1>
+      <ProductList />
+
     </div>
   )
 }

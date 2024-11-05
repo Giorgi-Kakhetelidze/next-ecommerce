@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -32,7 +32,7 @@ function NavIcons() {
         onClick={handleProfile}
       />
       {isProfileOpen && (
-        <div className="absolute p-5 rounded-md top-12 left-0 text-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20">
+        <div className="absolute p-5 rounded-md top-12 left-0 text-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20 bg-white">
           <Link href="/">Profile</Link>
           <div className="mt-2 cursor-pointer">Logout</div>
         </div>
@@ -44,14 +44,14 @@ function NavIcons() {
         height={25}
         className="cursor-pointer"
       />
-      <div>
+          
+      <div className="relative cursor-pointer" onClick={() => setIsCartOpen((prev) => !prev)}>
         <Image
           alt="cart"
           src="/cart.png"
           width={25}
           height={25}
           className="cursor-pointer"
-          onClick={() => setIsCartOpen((prev) => !prev)}
         />
         <div className="absolute -top-4 -right-4 w-6 h-6 bg-red flex items-center justify-center rounded-full text-white text-sm">2</div>
       </div>

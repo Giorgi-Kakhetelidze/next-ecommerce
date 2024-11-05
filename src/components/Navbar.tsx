@@ -3,7 +3,6 @@ import Menu from "./Menu";
 import Image from "next/image";
 import SearchBar from "./SearchBar";
 import NavIcons from "./NavIcons";
-// import NavIcons from "./NavIcons";
 
 
 const Navbar = () => {
