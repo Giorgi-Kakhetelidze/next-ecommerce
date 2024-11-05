@@ -74,19 +74,23 @@ function CartModal() {
               </div>
             </div>
           </div>
-          // BOTTOM
+          {/* // BOTTOM */}
           <div className="">
             <div className="flex items-center justify-between font-semibold">
               <span className="">Subtotal</span>
               <span className="">$49</span>
             </div>
             <p className="text-gray-500 text-sm mt-2 mb-4">
-              Shipping and taxes calculated at checkout. 
+              Shipping and taxes calculated at checkout.
             </p>
 
             <div className="flex justify-between text-sm">
-              <button className="rounded-md py-3 px-4 ring-1 ring-gray-300">View Cart</button>
-              <button className="rounded-md py-3 px-4 bg-black text-white">Checkout</button>
+              <button className="rounded-md py-3 px-4 ring-1 ring-gray-300">
+                View Cart
+              </button>
+              <button className="rounded-md py-3 px-4 bg-black text-white">
+                Checkout
+              </button>
             </div>
           </div>
         </>
